@@ -20,6 +20,7 @@ typedef struct		s_location
 	int             x;
 	int				y;
 	int             eq;
+	char 			v_vis;
 }					t_location;
 
 typedef struct  s_cnt {
@@ -49,6 +50,9 @@ typedef struct  s_all {
 	t_location		locate;
 	t_cnt			cnt;
 	t_data			img;
+	float 			v_x;
+	float 			v_y;
+	double 			fov;
 }               t_all;
 
 

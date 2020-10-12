@@ -22,34 +22,72 @@ void	null_cnt(t_all *vars)
 	vars->cnt.cnt_2 = 0;
 }
 
+// НЕНУЖНАЯ ФУНКЦИЯ
+void vector_vision(t_all *vars)
+{
+
+	vars->v_x = (float)vars->locate.x;
+	vars->v_y = (float)vars->locate.y;
+
+	float		stup = 0;
+	if(vars->locate.v_vis == 'N')
+	{
+		while(--vars->v_y)
+		{
+			stup +=1;
+			my_mlx_pixel_put(vars, (int) (vars->v_x - ((sin(vars->fov) * stup) / cos(vars->fov))),
+								 (int) (vars->v_y - stup), 0x00ff000);
+			mlx_put_image_to_window(vars->render.mlx, vars->render.mlx_win, vars->img.img, 0, 0);
+		}
+		vars->v_x = (float)vars->locate.x;
+		vars->v_y = (float)vars->locate.y;
+		stup = 0;
+		while(--vars->v_y)
+		{
+			stup +=1;
+			my_mlx_pixel_put(vars, (int) (vars->v_x - ((sin(-vars->fov) * stup) / cos(-vars->fov))),
+								 (int) (vars->v_y - stup), 0x00ff000);
+			mlx_put_image_to_window(vars->render.mlx, vars->render.mlx_win, vars->img.img, 0, 0);
+		}
+	}
+
+}
+// НЕНУЖНАЯ ФУНКЦИЯ
+
 int		move(int keycode, t_all *vars)
 {
-	if (keycode == 126)
+	if (keycode == 126) //&& vars->pars.map[vars->locate.x/vars->locate.eq][vars->locate.y/vars->locate.eq] != '1')
 	{
-		vars->locate.y--;
+		clear_pers(vars);
+		vars->locate.y -=2;
 		null_cnt(vars);
-		render_map(vars);
+//		render_map(vars);
 		put_pers(vars);
 	}
 	else if (keycode == 125)
 	{
-		vars->locate.y++;
+		clear_pers(vars);
+		vars->locate.y +=2;
 		null_cnt(vars);
-		render_map(vars);
+//		render_map(vars);
 		put_pers(vars);
 	}
 	else if (keycode == 124)
 	{
-		vars->locate.x++;
+		clear_pers(vars);
+		vars->locate.x +=2;
 		null_cnt(vars);
-		render_map(vars);
+//		render_map(vars);
+		vector_vision(vars);
 		put_pers(vars);
 	}
 	else if (keycode == 123)
 	{
-		vars->locate.x--;
+		clear_pers(vars);
+		vars->locate.x -=2;
 		null_cnt(vars);
-		render_map(vars);
+//		render_map(vars);
+		vector_vision(vars);
 		put_pers(vars);
 	}
 

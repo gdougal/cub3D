@@ -20,6 +20,7 @@ static void	init_location_counter(t_location *location, t_cnt *cnt)
 	location->x = 0;
 	location->y = 0;
 	location->eq = 0;
+	location->v_vis = 'A';
 
 	cnt->cnt_1 = 0;
 	cnt->cnt_2 = 0;
@@ -58,5 +59,6 @@ t_all 	init_vars(t_cube_struct *cube_struct)
 	vars.cnt = cnt;
 	vars.locate.eq = ((vars.pars.res_y/vars.pars.height) < (vars.pars.res_x/vars.pars.width) ?
 					  (vars.pars.res_y/vars.pars.height) : (vars.pars.res_x/vars.pars.width));
+	vars.fov = 45;
 	return (vars);
 }

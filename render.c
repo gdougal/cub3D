@@ -21,9 +21,20 @@ void	my_mlx_pixel_put(t_all *vars, int x, int y, unsigned int color)
 	*(unsigned int*)dst = color;
 }
 
+// НЕНУЖНАЯ ФУНКЦИЯ
+
+void clear_pers(t_all *vars)
+{
+
+	my_mlx_pixel_put(vars, vars->locate.x, vars->locate.y, 0x0000000);
+	mlx_put_image_to_window(vars->render.mlx, vars->render.mlx_win, vars->img.img, 0, 0);
+}
+
+// НЕНУЖНАЯ ФУНКЦИЯ
+
 void put_pers(t_all *vars)
 {
-	my_mlx_pixel_put(vars, vars->locate.x , vars->locate.y, 0x00ff0000);
+	my_mlx_pixel_put(vars, vars->locate.x, vars->locate.y, 0x00ff0000);
 	mlx_put_image_to_window(vars->render.mlx, vars->render.mlx_win, vars->img.img, 0, 0);
 }
 
@@ -60,6 +71,7 @@ void render_map(t_all *vars)
 				put_pixel_map(vars);
 			if(vars->pars.map[vars->cnt.cnt_1][vars->cnt.cnt_2] == 'N' && (vars->locate.x == 0 && vars->locate.y == 0))
 			{
+				vars->locate.v_vis = 'N';
 				vars->locate.x = (vars->cnt.cnt_2 * vars->locate.eq) + vars->locate.eq/2;
 				vars->locate.y = (vars->cnt.cnt_1 * vars->locate.eq) + vars->locate.eq/2;
 				put_pers(vars);
