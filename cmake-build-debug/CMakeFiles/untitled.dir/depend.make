@@ -7,6 +7,12 @@ CMakeFiles/untitled.dir/gnl/get_next_line.c.o: ../gnl/get_next_line.h
 CMakeFiles/untitled.dir/gnl/get_next_line_utils.c.o: ../gnl/get_next_line.h
 CMakeFiles/untitled.dir/gnl/get_next_line_utils.c.o: ../gnl/get_next_line_utils.c
 
+CMakeFiles/untitled.dir/init_struct/init_struct.c.o: ../gnl/get_next_line.h
+CMakeFiles/untitled.dir/init_struct/init_struct.c.o: ../include/parser.h
+CMakeFiles/untitled.dir/init_struct/init_struct.c.o: ../include/struct.h
+CMakeFiles/untitled.dir/init_struct/init_struct.c.o: ../libft/libft.h
+CMakeFiles/untitled.dir/init_struct/init_struct.c.o: ../init_struct/init_struct.c
+
 CMakeFiles/untitled.dir/libft/ft_atoi.c.o: ../libft/ft_atoi.c
 
 CMakeFiles/untitled.dir/libft/ft_bzero.c.o: ../libft/ft_bzero.c
@@ -132,8 +138,18 @@ CMakeFiles/untitled.dir/parser.c.o: ../include/parser.h
 CMakeFiles/untitled.dir/parser.c.o: ../libft/libft.h
 CMakeFiles/untitled.dir/parser.c.o: ../parser.c
 
+CMakeFiles/untitled.dir/render.c.o: ../gnl/get_next_line.h
+CMakeFiles/untitled.dir/render.c.o: ../include/parser.h
+CMakeFiles/untitled.dir/render.c.o: ../include/render.h
+CMakeFiles/untitled.dir/render.c.o: ../include/struct.h
+CMakeFiles/untitled.dir/render.c.o: ../libft/libft.h
+CMakeFiles/untitled.dir/render.c.o: ../render.c
+CMakeFiles/untitled.dir/render.c.o: /usr/local/include/mlx.h
+
 CMakeFiles/untitled.dir/window.c.o: ../gnl/get_next_line.h
 CMakeFiles/untitled.dir/window.c.o: ../include/parser.h
+CMakeFiles/untitled.dir/window.c.o: ../include/render.h
+CMakeFiles/untitled.dir/window.c.o: ../include/struct.h
 CMakeFiles/untitled.dir/window.c.o: ../libft/libft.h
 CMakeFiles/untitled.dir/window.c.o: ../window.c
 CMakeFiles/untitled.dir/window.c.o: /usr/local/include/mlx.h

@@ -68,10 +68,10 @@ RM = /goinfre/gdougal/CLion.app/Contents/bin/cmake/mac/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/gdougal/Desktop/hub_cub3D
+CMAKE_SOURCE_DIR = /Users/gdougal/Desktop/cub3d
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/gdougal/Desktop/hub_cub3D/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/gdougal/Desktop/cub3d/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -100,9 +100,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gdougal/Desktop/hub_cub3D/cmake-build-debug/CMakeFiles /Users/gdougal/Desktop/hub_cub3D/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gdougal/Desktop/cub3d/cmake-build-debug/CMakeFiles /Users/gdougal/Desktop/cub3d/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gdougal/Desktop/hub_cub3D/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gdougal/Desktop/cub3d/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -196,6 +196,33 @@ gnl/get_next_line_utils.s: gnl/get_next_line_utils.c.s
 gnl/get_next_line_utils.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled.dir/build.make CMakeFiles/untitled.dir/gnl/get_next_line_utils.c.s
 .PHONY : gnl/get_next_line_utils.c.s
+
+init_struct/init_struct.o: init_struct/init_struct.c.o
+
+.PHONY : init_struct/init_struct.o
+
+# target to build an object file
+init_struct/init_struct.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled.dir/build.make CMakeFiles/untitled.dir/init_struct/init_struct.c.o
+.PHONY : init_struct/init_struct.c.o
+
+init_struct/init_struct.i: init_struct/init_struct.c.i
+
+.PHONY : init_struct/init_struct.i
+
+# target to preprocess a source file
+init_struct/init_struct.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled.dir/build.make CMakeFiles/untitled.dir/init_struct/init_struct.c.i
+.PHONY : init_struct/init_struct.c.i
+
+init_struct/init_struct.s: init_struct/init_struct.c.s
+
+.PHONY : init_struct/init_struct.s
+
+# target to generate assembly for a file
+init_struct/init_struct.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled.dir/build.make CMakeFiles/untitled.dir/init_struct/init_struct.c.s
+.PHONY : init_struct/init_struct.c.s
 
 libft/ft_atoi.o: libft/ft_atoi.c.o
 
@@ -1385,6 +1412,33 @@ parser.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled.dir/build.make CMakeFiles/untitled.dir/parser.c.s
 .PHONY : parser.c.s
 
+render.o: render.c.o
+
+.PHONY : render.o
+
+# target to build an object file
+render.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled.dir/build.make CMakeFiles/untitled.dir/render.c.o
+.PHONY : render.c.o
+
+render.i: render.c.i
+
+.PHONY : render.i
+
+# target to preprocess a source file
+render.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled.dir/build.make CMakeFiles/untitled.dir/render.c.i
+.PHONY : render.c.i
+
+render.s: render.c.s
+
+.PHONY : render.s
+
+# target to generate assembly for a file
+render.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled.dir/build.make CMakeFiles/untitled.dir/render.c.s
+.PHONY : render.c.s
+
 window.o: window.c.o
 
 .PHONY : window.o
@@ -1427,6 +1481,9 @@ help:
 	@echo "... gnl/get_next_line_utils.o"
 	@echo "... gnl/get_next_line_utils.i"
 	@echo "... gnl/get_next_line_utils.s"
+	@echo "... init_struct/init_struct.o"
+	@echo "... init_struct/init_struct.i"
+	@echo "... init_struct/init_struct.s"
 	@echo "... libft/ft_atoi.o"
 	@echo "... libft/ft_atoi.i"
 	@echo "... libft/ft_atoi.s"
@@ -1559,6 +1616,9 @@ help:
 	@echo "... parser.o"
 	@echo "... parser.i"
 	@echo "... parser.s"
+	@echo "... render.o"
+	@echo "... render.i"
+	@echo "... render.s"
 	@echo "... window.o"
 	@echo "... window.i"
 	@echo "... window.s"

@@ -6,5 +6,5 @@ C_FLAGS = -Lmlx -lmlx -framework OpenGL -framework AppKit -g -isysroot /Applicat
 
 C_DEFINES = 
 
-C_INCLUDES = -I/usr/local/include -I/Users/gdougal/Desktop/hub_cub3D/libft -I/Users/gdougal/Desktop/hub_cub3D/gnl -I/Users/gdougal/Desktop/hub_cub3D/include 
+C_INCLUDES = -I/usr/local/include -I/Users/gdougal/Desktop/cub3d/libft -I/Users/gdougal/Desktop/cub3d/gnl -I/Users/gdougal/Desktop/cub3d/include 
 

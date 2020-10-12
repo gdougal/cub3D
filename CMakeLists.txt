@@ -18,5 +18,5 @@ add_executable(untitled
         window.c
         ${lib_src}
         ${gnl_src}
-        )
+        include/struct.h init_struct/init_struct.c include/render.h render.c)
 #target_link_libraries(untitled ${LIBRARIES})

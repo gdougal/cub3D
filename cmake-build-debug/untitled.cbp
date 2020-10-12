@@ -8,227 +8,239 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/Users/gdougal/Desktop/hub_cub3D/cmake-build-debug"/>
+				<Option working_dir="/Users/gdougal/Desktop/cub3d/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j6 -f &quot;/Users/gdougal/Desktop/hub_cub3D/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j6 -f &quot;/Users/gdougal/Desktop/hub_cub3D/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j6 -f &quot;/Users/gdougal/Desktop/hub_cub3D/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j6 -f &quot;/Users/gdougal/Desktop/hub_cub3D/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j6 -f &quot;/Users/gdougal/Desktop/cub3d/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j6 -f &quot;/Users/gdougal/Desktop/cub3d/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j6 -f &quot;/Users/gdougal/Desktop/cub3d/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j6 -f &quot;/Users/gdougal/Desktop/cub3d/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/Users/gdougal/Desktop/hub_cub3D/cmake-build-debug"/>
+				<Option working_dir="/Users/gdougal/Desktop/cub3d/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j6 -f &quot;/Users/gdougal/Desktop/hub_cub3D/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j6 -f &quot;/Users/gdougal/Desktop/hub_cub3D/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j6 -f &quot;/Users/gdougal/Desktop/hub_cub3D/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j6 -f &quot;/Users/gdougal/Desktop/hub_cub3D/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j6 -f &quot;/Users/gdougal/Desktop/cub3d/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j6 -f &quot;/Users/gdougal/Desktop/cub3d/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j6 -f &quot;/Users/gdougal/Desktop/cub3d/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j6 -f &quot;/Users/gdougal/Desktop/cub3d/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/Users/gdougal/Desktop/hub_cub3D/cmake-build-debug"/>
+				<Option working_dir="/Users/gdougal/Desktop/cub3d/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j6 -f &quot;/Users/gdougal/Desktop/hub_cub3D/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j6 -f &quot;/Users/gdougal/Desktop/hub_cub3D/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j6 -f &quot;/Users/gdougal/Desktop/hub_cub3D/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j6 -f &quot;/Users/gdougal/Desktop/hub_cub3D/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j6 -f &quot;/Users/gdougal/Desktop/cub3d/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j6 -f &quot;/Users/gdougal/Desktop/cub3d/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j6 -f &quot;/Users/gdougal/Desktop/cub3d/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j6 -f &quot;/Users/gdougal/Desktop/cub3d/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="untitled">
-				<Option output="/Users/gdougal/Desktop/hub_cub3D/cmake-build-debug/untitled" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/gdougal/Desktop/hub_cub3D/cmake-build-debug"/>
+				<Option output="/Users/gdougal/Desktop/cub3d/cmake-build-debug/untitled" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/gdougal/Desktop/cub3d/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add directory="/usr/local/include"/>
-					<Add directory="/Users/gdougal/Desktop/hub_cub3D/libft"/>
-					<Add directory="/Users/gdougal/Desktop/hub_cub3D/gnl"/>
-					<Add directory="/Users/gdougal/Desktop/hub_cub3D/include"/>
+					<Add directory="/Users/gdougal/Desktop/cub3d/libft"/>
+					<Add directory="/Users/gdougal/Desktop/cub3d/gnl"/>
+					<Add directory="/Users/gdougal/Desktop/cub3d/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/11.0.0/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
 					<Add directory="/System/Library/Frameworks"/>
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j6 -f &quot;/Users/gdougal/Desktop/hub_cub3D/cmake-build-debug/Makefile&quot;  VERBOSE=1 untitled"/>
-					<CompileFile command="/usr/bin/make -j6 -f &quot;/Users/gdougal/Desktop/hub_cub3D/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j6 -f &quot;/Users/gdougal/Desktop/hub_cub3D/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j6 -f &quot;/Users/gdougal/Desktop/hub_cub3D/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j6 -f &quot;/Users/gdougal/Desktop/cub3d/cmake-build-debug/Makefile&quot;  VERBOSE=1 untitled"/>
+					<CompileFile command="/usr/bin/make -j6 -f &quot;/Users/gdougal/Desktop/cub3d/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j6 -f &quot;/Users/gdougal/Desktop/cub3d/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j6 -f &quot;/Users/gdougal/Desktop/cub3d/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="untitled/fast">
-				<Option output="/Users/gdougal/Desktop/hub_cub3D/cmake-build-debug/untitled" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/gdougal/Desktop/hub_cub3D/cmake-build-debug"/>
+				<Option output="/Users/gdougal/Desktop/cub3d/cmake-build-debug/untitled" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/gdougal/Desktop/cub3d/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add directory="/usr/local/include"/>
-					<Add directory="/Users/gdougal/Desktop/hub_cub3D/libft"/>
-					<Add directory="/Users/gdougal/Desktop/hub_cub3D/gnl"/>
-					<Add directory="/Users/gdougal/Desktop/hub_cub3D/include"/>
+					<Add directory="/Users/gdougal/Desktop/cub3d/libft"/>
+					<Add directory="/Users/gdougal/Desktop/cub3d/gnl"/>
+					<Add directory="/Users/gdougal/Desktop/cub3d/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/11.0.0/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
 					<Add directory="/System/Library/Frameworks"/>
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j6 -f &quot;/Users/gdougal/Desktop/hub_cub3D/cmake-build-debug/Makefile&quot;  VERBOSE=1 untitled/fast"/>
-					<CompileFile command="/usr/bin/make -j6 -f &quot;/Users/gdougal/Desktop/hub_cub3D/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j6 -f &quot;/Users/gdougal/Desktop/hub_cub3D/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j6 -f &quot;/Users/gdougal/Desktop/hub_cub3D/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j6 -f &quot;/Users/gdougal/Desktop/cub3d/cmake-build-debug/Makefile&quot;  VERBOSE=1 untitled/fast"/>
+					<CompileFile command="/usr/bin/make -j6 -f &quot;/Users/gdougal/Desktop/cub3d/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j6 -f &quot;/Users/gdougal/Desktop/cub3d/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j6 -f &quot;/Users/gdougal/Desktop/cub3d/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/gdougal/Desktop/hub_cub3D/gnl/get_next_line.c">
+		<Unit filename="/Users/gdougal/Desktop/cub3d/gnl/get_next_line.c">
 			<Option target="untitled"/>
 		</Unit>
-		<Unit filename="/Users/gdougal/Desktop/hub_cub3D/gnl/get_next_line.h">
+		<Unit filename="/Users/gdougal/Desktop/cub3d/gnl/get_next_line.h">
 			<Option target="untitled"/>
 		</Unit>
-		<Unit filename="/Users/gdougal/Desktop/hub_cub3D/gnl/get_next_line_utils.c">
+		<Unit filename="/Users/gdougal/Desktop/cub3d/gnl/get_next_line_utils.c">
 			<Option target="untitled"/>
 		</Unit>
-		<Unit filename="/Users/gdougal/Desktop/hub_cub3D/libft/ft_atoi.c">
+		<Unit filename="/Users/gdougal/Desktop/cub3d/include/render.h">
 			<Option target="untitled"/>
 		</Unit>
-		<Unit filename="/Users/gdougal/Desktop/hub_cub3D/libft/ft_bzero.c">
+		<Unit filename="/Users/gdougal/Desktop/cub3d/include/struct.h">
 			<Option target="untitled"/>
 		</Unit>
-		<Unit filename="/Users/gdougal/Desktop/hub_cub3D/libft/ft_calloc.c">
+		<Unit filename="/Users/gdougal/Desktop/cub3d/init_struct/init_struct.c">
 			<Option target="untitled"/>
 		</Unit>
-		<Unit filename="/Users/gdougal/Desktop/hub_cub3D/libft/ft_isalnum.c">
+		<Unit filename="/Users/gdougal/Desktop/cub3d/libft/ft_atoi.c">
 			<Option target="untitled"/>
 		</Unit>
-		<Unit filename="/Users/gdougal/Desktop/hub_cub3D/libft/ft_isalpha.c">
+		<Unit filename="/Users/gdougal/Desktop/cub3d/libft/ft_bzero.c">
 			<Option target="untitled"/>
 		</Unit>
-		<Unit filename="/Users/gdougal/Desktop/hub_cub3D/libft/ft_isascii.c">
+		<Unit filename="/Users/gdougal/Desktop/cub3d/libft/ft_calloc.c">
 			<Option target="untitled"/>
 		</Unit>
-		<Unit filename="/Users/gdougal/Desktop/hub_cub3D/libft/ft_isdigit.c">
+		<Unit filename="/Users/gdougal/Desktop/cub3d/libft/ft_isalnum.c">
 			<Option target="untitled"/>
 		</Unit>
-		<Unit filename="/Users/gdougal/Desktop/hub_cub3D/libft/ft_isprint.c">
+		<Unit filename="/Users/gdougal/Desktop/cub3d/libft/ft_isalpha.c">
 			<Option target="untitled"/>
 		</Unit>
-		<Unit filename="/Users/gdougal/Desktop/hub_cub3D/libft/ft_itoa.c">
+		<Unit filename="/Users/gdougal/Desktop/cub3d/libft/ft_isascii.c">
 			<Option target="untitled"/>
 		</Unit>
-		<Unit filename="/Users/gdougal/Desktop/hub_cub3D/libft/ft_lstadd_back.c">
+		<Unit filename="/Users/gdougal/Desktop/cub3d/libft/ft_isdigit.c">
 			<Option target="untitled"/>
 		</Unit>
-		<Unit filename="/Users/gdougal/Desktop/hub_cub3D/libft/ft_lstadd_front.c">
+		<Unit filename="/Users/gdougal/Desktop/cub3d/libft/ft_isprint.c">
 			<Option target="untitled"/>
 		</Unit>
-		<Unit filename="/Users/gdougal/Desktop/hub_cub3D/libft/ft_lstclear.c">
+		<Unit filename="/Users/gdougal/Desktop/cub3d/libft/ft_itoa.c">
 			<Option target="untitled"/>
 		</Unit>
-		<Unit filename="/Users/gdougal/Desktop/hub_cub3D/libft/ft_lstdelone.c">
+		<Unit filename="/Users/gdougal/Desktop/cub3d/libft/ft_lstadd_back.c">
 			<Option target="untitled"/>
 		</Unit>
-		<Unit filename="/Users/gdougal/Desktop/hub_cub3D/libft/ft_lstiter.c">
+		<Unit filename="/Users/gdougal/Desktop/cub3d/libft/ft_lstadd_front.c">
 			<Option target="untitled"/>
 		</Unit>
-		<Unit filename="/Users/gdougal/Desktop/hub_cub3D/libft/ft_lstlast.c">
+		<Unit filename="/Users/gdougal/Desktop/cub3d/libft/ft_lstclear.c">
 			<Option target="untitled"/>
 		</Unit>
-		<Unit filename="/Users/gdougal/Desktop/hub_cub3D/libft/ft_lstmap.c">
+		<Unit filename="/Users/gdougal/Desktop/cub3d/libft/ft_lstdelone.c">
 			<Option target="untitled"/>
 		</Unit>
-		<Unit filename="/Users/gdougal/Desktop/hub_cub3D/libft/ft_lstnew.c">
+		<Unit filename="/Users/gdougal/Desktop/cub3d/libft/ft_lstiter.c">
 			<Option target="untitled"/>
 		</Unit>
-		<Unit filename="/Users/gdougal/Desktop/hub_cub3D/libft/ft_lstsize.c">
+		<Unit filename="/Users/gdougal/Desktop/cub3d/libft/ft_lstlast.c">
 			<Option target="untitled"/>
 		</Unit>
-		<Unit filename="/Users/gdougal/Desktop/hub_cub3D/libft/ft_memccpy.c">
+		<Unit filename="/Users/gdougal/Desktop/cub3d/libft/ft_lstmap.c">
 			<Option target="untitled"/>
 		</Unit>
-		<Unit filename="/Users/gdougal/Desktop/hub_cub3D/libft/ft_memchr.c">
+		<Unit filename="/Users/gdougal/Desktop/cub3d/libft/ft_lstnew.c">
 			<Option target="untitled"/>
 		</Unit>
-		<Unit filename="/Users/gdougal/Desktop/hub_cub3D/libft/ft_memcmp.c">
+		<Unit filename="/Users/gdougal/Desktop/cub3d/libft/ft_lstsize.c">
 			<Option target="untitled"/>
 		</Unit>
-		<Unit filename="/Users/gdougal/Desktop/hub_cub3D/libft/ft_memcpy.c">
+		<Unit filename="/Users/gdougal/Desktop/cub3d/libft/ft_memccpy.c">
 			<Option target="untitled"/>
 		</Unit>
-		<Unit filename="/Users/gdougal/Desktop/hub_cub3D/libft/ft_memmove.c">
+		<Unit filename="/Users/gdougal/Desktop/cub3d/libft/ft_memchr.c">
 			<Option target="untitled"/>
 		</Unit>
-		<Unit filename="/Users/gdougal/Desktop/hub_cub3D/libft/ft_memset.c">
+		<Unit filename="/Users/gdougal/Desktop/cub3d/libft/ft_memcmp.c">
 			<Option target="untitled"/>
 		</Unit>
-		<Unit filename="/Users/gdougal/Desktop/hub_cub3D/libft/ft_putchar_fd.c">
+		<Unit filename="/Users/gdougal/Desktop/cub3d/libft/ft_memcpy.c">
 			<Option target="untitled"/>
 		</Unit>
-		<Unit filename="/Users/gdougal/Desktop/hub_cub3D/libft/ft_putendl_fd.c">
+		<Unit filename="/Users/gdougal/Desktop/cub3d/libft/ft_memmove.c">
 			<Option target="untitled"/>
 		</Unit>
-		<Unit filename="/Users/gdougal/Desktop/hub_cub3D/libft/ft_putnbr_fd.c">
+		<Unit filename="/Users/gdougal/Desktop/cub3d/libft/ft_memset.c">
 			<Option target="untitled"/>
 		</Unit>
-		<Unit filename="/Users/gdougal/Desktop/hub_cub3D/libft/ft_putstr_fd.c">
+		<Unit filename="/Users/gdougal/Desktop/cub3d/libft/ft_putchar_fd.c">
 			<Option target="untitled"/>
 		</Unit>
-		<Unit filename="/Users/gdougal/Desktop/hub_cub3D/libft/ft_split.c">
+		<Unit filename="/Users/gdougal/Desktop/cub3d/libft/ft_putendl_fd.c">
 			<Option target="untitled"/>
 		</Unit>
-		<Unit filename="/Users/gdougal/Desktop/hub_cub3D/libft/ft_strchr.c">
+		<Unit filename="/Users/gdougal/Desktop/cub3d/libft/ft_putnbr_fd.c">
 			<Option target="untitled"/>
 		</Unit>
-		<Unit filename="/Users/gdougal/Desktop/hub_cub3D/libft/ft_strdup.c">
+		<Unit filename="/Users/gdougal/Desktop/cub3d/libft/ft_putstr_fd.c">
 			<Option target="untitled"/>
 		</Unit>
-		<Unit filename="/Users/gdougal/Desktop/hub_cub3D/libft/ft_strjoin.c">
+		<Unit filename="/Users/gdougal/Desktop/cub3d/libft/ft_split.c">
 			<Option target="untitled"/>
 		</Unit>
-		<Unit filename="/Users/gdougal/Desktop/hub_cub3D/libft/ft_strlcat.c">
+		<Unit filename="/Users/gdougal/Desktop/cub3d/libft/ft_strchr.c">
 			<Option target="untitled"/>
 		</Unit>
-		<Unit filename="/Users/gdougal/Desktop/hub_cub3D/libft/ft_strlcpy.c">
+		<Unit filename="/Users/gdougal/Desktop/cub3d/libft/ft_strdup.c">
 			<Option target="untitled"/>
 		</Unit>
-		<Unit filename="/Users/gdougal/Desktop/hub_cub3D/libft/ft_strlen.c">
+		<Unit filename="/Users/gdougal/Desktop/cub3d/libft/ft_strjoin.c">
 			<Option target="untitled"/>
 		</Unit>
-		<Unit filename="/Users/gdougal/Desktop/hub_cub3D/libft/ft_strmapi.c">
+		<Unit filename="/Users/gdougal/Desktop/cub3d/libft/ft_strlcat.c">
 			<Option target="untitled"/>
 		</Unit>
-		<Unit filename="/Users/gdougal/Desktop/hub_cub3D/libft/ft_strncmp.c">
+		<Unit filename="/Users/gdougal/Desktop/cub3d/libft/ft_strlcpy.c">
 			<Option target="untitled"/>
 		</Unit>
-		<Unit filename="/Users/gdougal/Desktop/hub_cub3D/libft/ft_strnstr.c">
+		<Unit filename="/Users/gdougal/Desktop/cub3d/libft/ft_strlen.c">
 			<Option target="untitled"/>
 		</Unit>
-		<Unit filename="/Users/gdougal/Desktop/hub_cub3D/libft/ft_strrchr.c">
+		<Unit filename="/Users/gdougal/Desktop/cub3d/libft/ft_strmapi.c">
 			<Option target="untitled"/>
 		</Unit>
-		<Unit filename="/Users/gdougal/Desktop/hub_cub3D/libft/ft_strtrim.c">
+		<Unit filename="/Users/gdougal/Desktop/cub3d/libft/ft_strncmp.c">
 			<Option target="untitled"/>
 		</Unit>
-		<Unit filename="/Users/gdougal/Desktop/hub_cub3D/libft/ft_substr.c">
+		<Unit filename="/Users/gdougal/Desktop/cub3d/libft/ft_strnstr.c">
 			<Option target="untitled"/>
 		</Unit>
-		<Unit filename="/Users/gdougal/Desktop/hub_cub3D/libft/ft_tolower.c">
+		<Unit filename="/Users/gdougal/Desktop/cub3d/libft/ft_strrchr.c">
 			<Option target="untitled"/>
 		</Unit>
-		<Unit filename="/Users/gdougal/Desktop/hub_cub3D/libft/ft_toupper.c">
+		<Unit filename="/Users/gdougal/Desktop/cub3d/libft/ft_strtrim.c">
 			<Option target="untitled"/>
 		</Unit>
-		<Unit filename="/Users/gdougal/Desktop/hub_cub3D/parser.c">
+		<Unit filename="/Users/gdougal/Desktop/cub3d/libft/ft_substr.c">
 			<Option target="untitled"/>
 		</Unit>
-		<Unit filename="/Users/gdougal/Desktop/hub_cub3D/window.c">
+		<Unit filename="/Users/gdougal/Desktop/cub3d/libft/ft_tolower.c">
 			<Option target="untitled"/>
 		</Unit>
-		<Unit filename="/Users/gdougal/Desktop/hub_cub3D/CMakeLists.txt">
+		<Unit filename="/Users/gdougal/Desktop/cub3d/libft/ft_toupper.c">
+			<Option target="untitled"/>
+		</Unit>
+		<Unit filename="/Users/gdougal/Desktop/cub3d/parser.c">
+			<Option target="untitled"/>
+		</Unit>
+		<Unit filename="/Users/gdougal/Desktop/cub3d/render.c">
+			<Option target="untitled"/>
+		</Unit>
+		<Unit filename="/Users/gdougal/Desktop/cub3d/window.c">
+			<Option target="untitled"/>
+		</Unit>
+		<Unit filename="/Users/gdougal/Desktop/cub3d/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

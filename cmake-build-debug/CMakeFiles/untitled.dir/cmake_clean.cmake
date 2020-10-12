@@ -1,6 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/untitled.dir/gnl/get_next_line.c.o"
   "CMakeFiles/untitled.dir/gnl/get_next_line_utils.c.o"
+  "CMakeFiles/untitled.dir/init_struct/init_struct.c.o"
   "CMakeFiles/untitled.dir/libft/ft_atoi.c.o"
   "CMakeFiles/untitled.dir/libft/ft_bzero.c.o"
   "CMakeFiles/untitled.dir/libft/ft_calloc.c.o"
@@ -45,6 +46,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/untitled.dir/libft/ft_tolower.c.o"
   "CMakeFiles/untitled.dir/libft/ft_toupper.c.o"
   "CMakeFiles/untitled.dir/parser.c.o"
+  "CMakeFiles/untitled.dir/render.c.o"
   "CMakeFiles/untitled.dir/window.c.o"
   "untitled"
   "untitled.pdb"
