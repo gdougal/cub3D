@@ -14,46 +14,57 @@
 # define UNTITLED_STRUCT_H
 
 # include "parser.h"
+# include <math.h>
 
 typedef struct		s_location
 {
-	int             x;
-	int				y;
-	int             eq;
+	double			x;
+	double			y;
+//	int             eq;
 	char 			v_vis;
 }					t_location;
 
-typedef struct  s_cnt {
+typedef struct		s_cnt {
 	int 			cnt_1;
-	int 			cnt_2;
-	int 			cnt_3;
-	int 			cnt_4;
-}               t_cnt;
+	int				cnt_2;
+//	int 			cnt_3;
+//	int 			cnt_4;
+}					t_cnt;
 
-typedef struct  s_data {
-	void        *img;
-	char        *addr;
-	int         bits_per_pixel;
-	int         line_length;
-	int         endian;
-}               t_data;
+typedef struct		s_data {
+	void			*img;
+	char			*addr;
+	int				bits_per_pixel;
+	int				line_length;
+	int				endian;
+}					t_data;
 
-typedef struct  s_render {
-	void        *mlx;
-	void        *mlx_win;
-	void        *win;
-}               t_render;
+typedef struct		s_render {
+	void			*mlx;
+	void			*mlx_win;
+	void			*win;
+}					t_render;
 
-typedef struct  s_all {
-	t_cube_struct 	pars;
+typedef struct		s_all
+{
+	t_cube_struct	pars;
 	t_render		render;
 	t_location		locate;
 	t_cnt			cnt;
 	t_data			img;
-	float 			v_x;
-	float 			v_y;
+
+	double			angle_s;
+	double			angle_r;
 	double 			fov;
-}               t_all;
+	double			k;
+
+	double 			dist;
+	unsigned int 	w_color;
+	double			w_s;
+	double			w_e;
+	double			h_wll;
+	double			r_fov;
+}					t_all;
 
 
 t_all 	init_vars(t_cube_struct *cube_struct);

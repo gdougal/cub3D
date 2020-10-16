@@ -21,8 +21,8 @@
 
 typedef struct		s_cube_struct
 {
-    int             res_x;
-    int				res_y;
+    double			res_x;
+    double			res_y;
     char			*path_n;
     char			*path_s;
     char			*path_w;
@@ -41,6 +41,7 @@ typedef struct		s_cube_struct
 
 t_cube_struct		*parser(char *line, char L);
 void			go_to_screen(t_cube_struct *cube_struct);// go away tbl Jlishniy
+int	create_trgb(int t, int r, int g, int b);
 
 
 #endif //CUB3D_PARSER_H

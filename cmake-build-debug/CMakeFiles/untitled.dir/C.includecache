@@ -20,9 +20,17 @@ get_next_line.h
 libft.h
 ../include/libft.h
 
+../include/render.h
+mlx.h
+-
+struct.h
+../include/struct.h
+
 ../include/struct.h
 parser.h
 ../include/parser.h
+math.h
+-
 
 ../libft/libft.h
 string.h
@@ -32,9 +40,11 @@ stdlib.h
 unistd.h
 -
 
-/Users/gdougal/Desktop/cub3d/init_struct/init_struct.c
-struct.h
-/Users/gdougal/Desktop/cub3d/init_struct/struct.h
+/Users/gdougal/Desktop/cub3d/window.c
 parser.h
-/Users/gdougal/Desktop/cub3d/init_struct/parser.h
+/Users/gdougal/Desktop/cub3d/parser.h
+render.h
+/Users/gdougal/Desktop/cub3d/render.h
+
+/usr/local/include/mlx.h
 

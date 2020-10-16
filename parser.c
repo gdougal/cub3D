@@ -69,7 +69,7 @@ static void	proc_path(char *line, char l, t_cube_struct *cube_struct)
 		cube_struct->path_sprite = ft_strtrim(line, "S ");
 }
 
-static int	create_trgb(int t, int r, int g, int b)
+int	create_trgb(int t, int r, int g, int b)
 {
     return(t << 24 | r << 16 | g << 8 | b);
 }
@@ -123,40 +123,39 @@ int						main(int argc, char **argv)
     int				fd;
     char			*line;
     int				ret;
-	t_cube_struct	*cube_struct;
+	t_cube_struct	cube_struct;
 
     (void)argc;
     fd = open((argv[1]), O_RDONLY);
-    cube_struct = malloc(sizeof(*cube_struct));
-    init_struct(cube_struct);
+    init_struct(&cube_struct);
     do
     {
         line = (char *)malloc(sizeof(*line) * 1);
         ret = get_next_line(fd, &line);
         if (line[0] == 'R')
-			proc_numbers(line, 'R', cube_struct);
+			proc_numbers(line, 'R', &cube_struct);
         else if (line[0] == 'F')
-			proc_numbers(line, 'F', cube_struct);
+			proc_numbers(line, 'F', &cube_struct);
         else if (line[0] == 'C')
-			proc_numbers(line, 'C', cube_struct);
+			proc_numbers(line, 'C', &cube_struct);
         else if (!ft_memcmp(line, "NO", 2))
-			proc_path(line, 'N', cube_struct);
+			proc_path(line, 'N', &cube_struct);
         else if (!ft_memcmp(line, "SO", 2))
-			proc_path(line, 'S', cube_struct);
+			proc_path(line, 'S', &cube_struct);
         else if (!ft_memcmp(line, "WE", 2))
-			proc_path(line, 'W', cube_struct);
+			proc_path(line, 'W', &cube_struct);
         else if (!ft_memcmp(line, "EA", 2))
-			proc_path(line, 'E', cube_struct);
+			proc_path(line, 'E', &cube_struct);
         else if (line[0] == 'S')
-			proc_path(line, 's', cube_struct);
+			proc_path(line, 's', &cube_struct);
         else if (line[0] == '1' || line[0] == '0' || line[0] == 'N' || line[0] == '2' || line[0] == ' ')
-			cube_struct->height++;
+			cube_struct.height++;
     }
     while (ret);
-	map_proc(cube_struct->height, cube_struct, argv[1]);
+	map_proc(cube_struct.height, &cube_struct, argv[1]);
 	free(line);
-	max_line(cube_struct);
-	go_to_screen(cube_struct);
-	free(cube_struct);
+	max_line(&cube_struct);
+	go_to_screen(&cube_struct);
+	free(&cube_struct);
     return(0);
 }

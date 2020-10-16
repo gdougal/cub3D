@@ -19,13 +19,11 @@ static void	init_location_counter(t_location *location, t_cnt *cnt)
 {
 	location->x = 0;
 	location->y = 0;
-	location->eq = 0;
+//	location->eq = 0;
 	location->v_vis = 'A';
 
 	cnt->cnt_1 = 0;
 	cnt->cnt_2 = 0;
-	cnt->cnt_4 = 0;
-	cnt->cnt_3 = 0;
 }
 
 static void	init_render_img(t_render *render, t_data *img)
@@ -57,8 +55,16 @@ t_all 	init_vars(t_cube_struct *cube_struct)
 	vars.render = render;
 	vars.img = img;
 	vars.cnt = cnt;
-	vars.locate.eq = ((vars.pars.res_y/vars.pars.height) < (vars.pars.res_x/vars.pars.width) ?
-					  (vars.pars.res_y/vars.pars.height) : (vars.pars.res_x/vars.pars.width));
-	vars.fov = 45;
+//	vars.locate.eq = ((vars.pars.res_y/vars.pars.height) < (vars.pars.res_x/vars.pars.width) ?
+//					  (vars.pars.res_y/vars.pars.height) : (vars.pars.res_x/vars.pars.width));
+	vars.fov = 60;
+	vars.dist = 0;
+	vars.angle_s = 0;
+	vars.angle_r = 0;
+	vars.w_color = 995328;
+	vars.w_s = 0;
+	vars.w_e = 0;
+	vars.r_fov = 0;
+	vars.k = 0;
 	return (vars);
 }
