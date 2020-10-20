@@ -63,7 +63,6 @@ typedef struct		s_all
 	double			w_s;
 	double			w_e;
 	double			h_wll;
-	double			r_fov;
 }					t_all;
 
 

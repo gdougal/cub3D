@@ -45,6 +45,8 @@ parser.h
 /Users/gdougal/Desktop/cub3d/parser.h
 render.h
 /Users/gdougal/Desktop/cub3d/render.h
+stdio.h
+-
 
 /usr/local/include/mlx.h
 

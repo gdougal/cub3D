@@ -15,11 +15,11 @@
 #include <mlx.h>
 #include "struct.h"
 
-void render_map(t_all *vars);
-static void put_pixel_map(t_all *vars);
-void put_pers(t_all *vars);
-void	my_mlx_pixel_put(t_all *vars, int x, int y, unsigned int color);
-int					move(int keycode, t_all *vars);
+void 		render_map(t_all *vars);
+static void	put_pixel_map(t_all *vars);
+void		put_pers(t_all *vars);
+void		my_mlx_pixel_put(t_all *vars, int x, int y, unsigned int color);
+int			move(int keycode, t_all *vars);
 
 void render_flour(t_all *vars);
 
