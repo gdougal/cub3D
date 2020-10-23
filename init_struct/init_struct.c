@@ -38,6 +38,8 @@ static void	init_render_img(t_render *render, t_data *img)
 	img->line_length = 0;
 }
 
+
+
 t_all 	init_vars(t_cube_struct *cube_struct)
 {
 	t_all		vars;
@@ -45,9 +47,20 @@ t_all 	init_vars(t_cube_struct *cube_struct)
 	t_data 		img;
 	t_location	location;
 	t_cnt 		cnt;
+	t_list		*list_1;
+	t_sprt		sprt;
+
 
 	init_render_img(&render, &img);
 	init_location_counter(&location, &cnt);
+
+	list_1 = malloc(sizeof(t_list));
+	list_1->content = NULL;
+	list_1->next = NULL;
+	sprt.x_sprt = 0;
+	sprt.y_sprt = 0;
+
+	vars.sprt_num = 0;
 
 	vars.locate = location;
 	vars.pars = *cube_struct;

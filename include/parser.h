@@ -21,8 +21,8 @@
 
 typedef struct		s_cube_struct
 {
-    double			res_x;
-    double			res_y;
+    float			res_x;
+    float			res_y;
     char			*path_n;
     char			*path_s;
     char			*path_w;

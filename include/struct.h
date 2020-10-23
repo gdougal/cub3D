@@ -18,17 +18,14 @@
 
 typedef struct		s_location
 {
-	double			x;
-	double			y;
-//	int             eq;
+	float			x;
+	float			y;
 	char 			v_vis;
 }					t_location;
 
 typedef struct		s_cnt {
 	int 			cnt_1;
 	int				cnt_2;
-//	int 			cnt_3;
-//	int 			cnt_4;
 }					t_cnt;
 
 typedef struct		s_data {
@@ -45,6 +42,13 @@ typedef struct		s_render {
 	void			*win;
 }					t_render;
 
+typedef struct		s_sprt
+{
+	float			x_sprt;
+	float			y_sprt;
+}					t_sprt;
+
+
 typedef struct		s_all
 {
 	t_cube_struct	pars;
@@ -52,33 +56,36 @@ typedef struct		s_all
 	t_location		locate;
 	t_cnt			cnt;
 	t_data			img;
+	t_list			list_1;
+	t_sprt			sprt;
 
-	double			angle_s;
-	double			angle_r;
-	double 			fov;
-	double			k;
+	int 			sprt_num;
 
-	double 			dist;
+	float			angle_s;
+	float			angle_r;
+	float			fov;
+	float			k;
+
+	float 			dist;
 	unsigned int 	w_1_color;
 	unsigned int 	w_2_color;
 	unsigned int 	w_3_color;
 	unsigned int 	w_4_color;
-	double			w_s;
-	double			w_e;
-	double			h_wll;
+	float			w_s;
+	float			w_e;
+	float			h_wll;
 
-	double			x_fc;
-	double			x_1;
-	double			y_1;
-	double			x_2;
-	double			y_2;
-	double 			y_fc;
-	double			d_x;
-	double 			d_y;
+	float			x_fc;
+	float			x_1;
+	float			y_1;
+	float			x_2;
+	float			y_2;
+	float 			y_fc;
+	float			d_x;
+	float 			d_y;
 	int				hit;
-
-
 }					t_all;
+
 
 
 t_all 		init_vars(t_cube_struct *cube_struct);
