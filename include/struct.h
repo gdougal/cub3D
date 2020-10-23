@@ -59,14 +59,30 @@ typedef struct		s_all
 	double			k;
 
 	double 			dist;
-	unsigned int 	w_color;
+	unsigned int 	w_1_color;
+	unsigned int 	w_2_color;
+	unsigned int 	w_3_color;
+	unsigned int 	w_4_color;
 	double			w_s;
 	double			w_e;
 	double			h_wll;
+
+	double			x_fc;
+	double			x_1;
+	double			y_1;
+	double			x_2;
+	double			y_2;
+	double 			y_fc;
+	double			d_x;
+	double 			d_y;
+	int				hit;
+
+
 }					t_all;
 
 
-t_all 	init_vars(t_cube_struct *cube_struct);
+t_all 		init_vars(t_cube_struct *cube_struct);
 static void	init_render_img(t_render *render, t_data *img);
 static void	init_location_counter(t_location *location, t_cnt *cnt);
+void		null_cnt(t_all *vars);
 #endif //UNTITLED_STRUCT_H

@@ -138,6 +138,14 @@ CMakeFiles/untitled.dir/parser.c.o
  ../include/parser.h
  ../libft/libft.h
  /Users/gdougal/Desktop/cub3d/parser.c
+CMakeFiles/untitled.dir/render.c.o
+ ../gnl/get_next_line.h
+ ../include/parser.h
+ ../include/render.h
+ ../include/struct.h
+ ../libft/libft.h
+ /Users/gdougal/Desktop/cub3d/render.c
+ /usr/local/include/mlx.h
 CMakeFiles/untitled.dir/window.c.o
  ../gnl/get_next_line.h
  ../include/parser.h

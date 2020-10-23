@@ -51,6 +51,7 @@ set(CMAKE_DEPENDS_CHECK_C
   "/Users/gdougal/Desktop/cub3d/libft/ft_tolower.c" "/Users/gdougal/Desktop/cub3d/cmake-build-debug/CMakeFiles/untitled.dir/libft/ft_tolower.c.o"
   "/Users/gdougal/Desktop/cub3d/libft/ft_toupper.c" "/Users/gdougal/Desktop/cub3d/cmake-build-debug/CMakeFiles/untitled.dir/libft/ft_toupper.c.o"
   "/Users/gdougal/Desktop/cub3d/parser.c" "/Users/gdougal/Desktop/cub3d/cmake-build-debug/CMakeFiles/untitled.dir/parser.c.o"
+  "/Users/gdougal/Desktop/cub3d/render.c" "/Users/gdougal/Desktop/cub3d/cmake-build-debug/CMakeFiles/untitled.dir/render.c.o"
   "/Users/gdougal/Desktop/cub3d/window.c" "/Users/gdougal/Desktop/cub3d/cmake-build-debug/CMakeFiles/untitled.dir/window.c.o"
   )
 set(CMAKE_C_COMPILER_ID "AppleClang")

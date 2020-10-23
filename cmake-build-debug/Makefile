@@ -1392,6 +1392,33 @@ parser.c.s:
 	$(MAKE) -f CMakeFiles/untitled.dir/build.make CMakeFiles/untitled.dir/parser.c.s
 .PHONY : parser.c.s
 
+render.o: render.c.o
+
+.PHONY : render.o
+
+# target to build an object file
+render.c.o:
+	$(MAKE) -f CMakeFiles/untitled.dir/build.make CMakeFiles/untitled.dir/render.c.o
+.PHONY : render.c.o
+
+render.i: render.c.i
+
+.PHONY : render.i
+
+# target to preprocess a source file
+render.c.i:
+	$(MAKE) -f CMakeFiles/untitled.dir/build.make CMakeFiles/untitled.dir/render.c.i
+.PHONY : render.c.i
+
+render.s: render.c.s
+
+.PHONY : render.s
+
+# target to generate assembly for a file
+render.c.s:
+	$(MAKE) -f CMakeFiles/untitled.dir/build.make CMakeFiles/untitled.dir/render.c.s
+.PHONY : render.c.s
+
 window.o: window.c.o
 
 .PHONY : window.o
@@ -1569,6 +1596,9 @@ help:
 	@echo "... parser.o"
 	@echo "... parser.i"
 	@echo "... parser.s"
+	@echo "... render.o"
+	@echo "... render.i"
+	@echo "... render.s"
 	@echo "... window.o"
 	@echo "... window.i"
 	@echo "... window.s"

@@ -16,4 +16,4 @@ add_executable(untitled
         window.c
         ${lib_src}
         ${gnl_src}
-        include/struct.h init_struct/init_struct.c)
+        include/struct.h init_struct/init_struct.c render.c include/render.h)

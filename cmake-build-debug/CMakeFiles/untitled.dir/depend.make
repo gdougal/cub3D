@@ -138,6 +138,14 @@ CMakeFiles/untitled.dir/parser.c.o: ../include/parser.h
 CMakeFiles/untitled.dir/parser.c.o: ../libft/libft.h
 CMakeFiles/untitled.dir/parser.c.o: ../parser.c
 
+CMakeFiles/untitled.dir/render.c.o: ../gnl/get_next_line.h
+CMakeFiles/untitled.dir/render.c.o: ../include/parser.h
+CMakeFiles/untitled.dir/render.c.o: ../include/render.h
+CMakeFiles/untitled.dir/render.c.o: ../include/struct.h
+CMakeFiles/untitled.dir/render.c.o: ../libft/libft.h
+CMakeFiles/untitled.dir/render.c.o: ../render.c
+CMakeFiles/untitled.dir/render.c.o: /usr/local/include/mlx.h
+
 CMakeFiles/untitled.dir/window.c.o: ../gnl/get_next_line.h
 CMakeFiles/untitled.dir/window.c.o: ../include/parser.h
 CMakeFiles/untitled.dir/window.c.o: ../include/render.h

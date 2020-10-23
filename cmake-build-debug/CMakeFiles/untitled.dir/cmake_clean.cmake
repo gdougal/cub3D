@@ -47,6 +47,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/untitled.dir/gnl/get_next_line.c.o"
   "CMakeFiles/untitled.dir/gnl/get_next_line_utils.c.o"
   "CMakeFiles/untitled.dir/init_struct/init_struct.c.o"
+  "CMakeFiles/untitled.dir/render.c.o"
   "untitled.pdb"
   "untitled"
 )
