@@ -10,10 +10,13 @@ include_directories(/usr/local/include libft gnl include)
 
 file(GLOB lib_src "${PROJECT_SOURCE_DIR}/libft/*.c")
 file(GLOB gnl_src "${PROJECT_SOURCE_DIR}/gnl/*.c")
+file(GLOB list "${PROJECT_SOURCE_DIR}/list_func/*.c")
+
 
 add_executable(untitled
         parser.c
         window.c
         ${lib_src}
         ${gnl_src}
-        include/struct.h init_struct/init_struct.c render.c include/render.h)
+#        ${list}
+        include/struct.h init_struct/init_struct.c render.c include/render.h include/lists.h vector_vision.c sprites.c)

@@ -55,6 +55,10 @@ void wall_calc(t_all *vars)
 	vars->h_wll = vars->pars.res_y/vars->dist;
 	vars->w_s = (vars->pars.res_y - vars->h_wll)/2;
 	vars->w_e = vars->w_s + vars->h_wll;
+	if (vars->w_s < 0)
+		vars->w_s = 0;
+	if (vars->w_e > vars->pars.res_y)
+		vars->w_e = vars->pars.res_y;
 	render_cub(vars);
 }
 
@@ -65,7 +69,7 @@ void popravka(t_all *vars)
 	if (vars->locate.v_vis == 'W')
 		vars->k = M_PI;
 	if (vars->locate.v_vis == 'S')
-		vars->k = 3*M_PI/2;
+		vars->k = M_PI/2;
 	if (vars->locate.v_vis == 'E')
 		vars->k = 0;
 }

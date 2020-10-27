@@ -11,7 +11,6 @@
 /* ************************************************************************** */
 
 #include "struct.h"
-#include "parser.h"
 
 
 
@@ -47,20 +46,11 @@ t_all 	init_vars(t_cube_struct *cube_struct)
 	t_data 		img;
 	t_location	location;
 	t_cnt 		cnt;
-	t_list		*list_1;
-	t_sprt		sprt;
-
 
 	init_render_img(&render, &img);
 	init_location_counter(&location, &cnt);
 
-	list_1 = malloc(sizeof(t_list));
-	list_1->content = NULL;
-	list_1->next = NULL;
-	sprt.x_sprt = 0;
-	sprt.y_sprt = 0;
-
-	vars.sprt_num = 0;
+	vars.list_1 = NULL;
 
 	vars.locate = location;
 	vars.pars = *cube_struct;
@@ -88,6 +78,9 @@ t_all 	init_vars(t_cube_struct *cube_struct)
 	vars.d_x = 0;
 	vars.d_y = 0;
 	vars.hit = 0;
+
+	vars.ray = (float*)malloc(sizeof(float) * (int)(vars.pars.res_x));
+	vars.dist_sprt = 0;
 	return (vars);
 }
 

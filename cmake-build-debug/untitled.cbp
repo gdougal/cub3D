@@ -93,6 +93,9 @@
 		<Unit filename="/Users/gdougal/Desktop/cub3d/gnl/get_next_line_utils.c">
 			<Option target="untitled"/>
 		</Unit>
+		<Unit filename="/Users/gdougal/Desktop/cub3d/include/lists.h">
+			<Option target="untitled"/>
+		</Unit>
 		<Unit filename="/Users/gdougal/Desktop/cub3d/include/render.h">
 			<Option target="untitled"/>
 		</Unit>
@@ -235,6 +238,12 @@
 			<Option target="untitled"/>
 		</Unit>
 		<Unit filename="/Users/gdougal/Desktop/cub3d/render.c">
+			<Option target="untitled"/>
+		</Unit>
+		<Unit filename="/Users/gdougal/Desktop/cub3d/sprites.c">
+			<Option target="untitled"/>
+		</Unit>
+		<Unit filename="/Users/gdougal/Desktop/cub3d/vector_vision.c">
 			<Option target="untitled"/>
 		</Unit>
 		<Unit filename="/Users/gdougal/Desktop/cub3d/window.c">

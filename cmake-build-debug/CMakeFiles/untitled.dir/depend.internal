@@ -140,14 +140,34 @@ CMakeFiles/untitled.dir/parser.c.o
  /Users/gdougal/Desktop/cub3d/parser.c
 CMakeFiles/untitled.dir/render.c.o
  ../gnl/get_next_line.h
+ ../include/lists.h
  ../include/parser.h
  ../include/render.h
  ../include/struct.h
  ../libft/libft.h
  /Users/gdougal/Desktop/cub3d/render.c
  /usr/local/include/mlx.h
+CMakeFiles/untitled.dir/sprites.c.o
+ ../gnl/get_next_line.h
+ ../include/lists.h
+ ../include/parser.h
+ ../include/render.h
+ ../include/struct.h
+ ../libft/libft.h
+ /Users/gdougal/Desktop/cub3d/sprites.c
+ /usr/local/include/mlx.h
+CMakeFiles/untitled.dir/vector_vision.c.o
+ ../gnl/get_next_line.h
+ ../include/lists.h
+ ../include/parser.h
+ ../include/render.h
+ ../include/struct.h
+ ../libft/libft.h
+ /Users/gdougal/Desktop/cub3d/vector_vision.c
+ /usr/local/include/mlx.h
 CMakeFiles/untitled.dir/window.c.o
  ../gnl/get_next_line.h
+ ../include/lists.h
  ../include/parser.h
  ../include/render.h
  ../include/struct.h

@@ -48,6 +48,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/untitled.dir/gnl/get_next_line_utils.c.o"
   "CMakeFiles/untitled.dir/init_struct/init_struct.c.o"
   "CMakeFiles/untitled.dir/render.c.o"
+  "CMakeFiles/untitled.dir/vector_vision.c.o"
+  "CMakeFiles/untitled.dir/sprites.c.o"
   "untitled.pdb"
   "untitled"
 )

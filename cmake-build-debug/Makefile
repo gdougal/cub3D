@@ -1419,6 +1419,60 @@ render.c.s:
 	$(MAKE) -f CMakeFiles/untitled.dir/build.make CMakeFiles/untitled.dir/render.c.s
 .PHONY : render.c.s
 
+sprites.o: sprites.c.o
+
+.PHONY : sprites.o
+
+# target to build an object file
+sprites.c.o:
+	$(MAKE) -f CMakeFiles/untitled.dir/build.make CMakeFiles/untitled.dir/sprites.c.o
+.PHONY : sprites.c.o
+
+sprites.i: sprites.c.i
+
+.PHONY : sprites.i
+
+# target to preprocess a source file
+sprites.c.i:
+	$(MAKE) -f CMakeFiles/untitled.dir/build.make CMakeFiles/untitled.dir/sprites.c.i
+.PHONY : sprites.c.i
+
+sprites.s: sprites.c.s
+
+.PHONY : sprites.s
+
+# target to generate assembly for a file
+sprites.c.s:
+	$(MAKE) -f CMakeFiles/untitled.dir/build.make CMakeFiles/untitled.dir/sprites.c.s
+.PHONY : sprites.c.s
+
+vector_vision.o: vector_vision.c.o
+
+.PHONY : vector_vision.o
+
+# target to build an object file
+vector_vision.c.o:
+	$(MAKE) -f CMakeFiles/untitled.dir/build.make CMakeFiles/untitled.dir/vector_vision.c.o
+.PHONY : vector_vision.c.o
+
+vector_vision.i: vector_vision.c.i
+
+.PHONY : vector_vision.i
+
+# target to preprocess a source file
+vector_vision.c.i:
+	$(MAKE) -f CMakeFiles/untitled.dir/build.make CMakeFiles/untitled.dir/vector_vision.c.i
+.PHONY : vector_vision.c.i
+
+vector_vision.s: vector_vision.c.s
+
+.PHONY : vector_vision.s
+
+# target to generate assembly for a file
+vector_vision.c.s:
+	$(MAKE) -f CMakeFiles/untitled.dir/build.make CMakeFiles/untitled.dir/vector_vision.c.s
+.PHONY : vector_vision.c.s
+
 window.o: window.c.o
 
 .PHONY : window.o
@@ -1599,6 +1653,12 @@ help:
 	@echo "... render.o"
 	@echo "... render.i"
 	@echo "... render.s"
+	@echo "... sprites.o"
+	@echo "... sprites.i"
+	@echo "... sprites.s"
+	@echo "... vector_vision.o"
+	@echo "... vector_vision.i"
+	@echo "... vector_vision.s"
 	@echo "... window.o"
 	@echo "... window.i"
 	@echo "... window.s"

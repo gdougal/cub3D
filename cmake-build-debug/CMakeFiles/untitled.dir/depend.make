@@ -139,6 +139,7 @@ CMakeFiles/untitled.dir/parser.c.o: ../libft/libft.h
 CMakeFiles/untitled.dir/parser.c.o: ../parser.c
 
 CMakeFiles/untitled.dir/render.c.o: ../gnl/get_next_line.h
+CMakeFiles/untitled.dir/render.c.o: ../include/lists.h
 CMakeFiles/untitled.dir/render.c.o: ../include/parser.h
 CMakeFiles/untitled.dir/render.c.o: ../include/render.h
 CMakeFiles/untitled.dir/render.c.o: ../include/struct.h
@@ -146,7 +147,26 @@ CMakeFiles/untitled.dir/render.c.o: ../libft/libft.h
 CMakeFiles/untitled.dir/render.c.o: ../render.c
 CMakeFiles/untitled.dir/render.c.o: /usr/local/include/mlx.h
 
+CMakeFiles/untitled.dir/sprites.c.o: ../gnl/get_next_line.h
+CMakeFiles/untitled.dir/sprites.c.o: ../include/lists.h
+CMakeFiles/untitled.dir/sprites.c.o: ../include/parser.h
+CMakeFiles/untitled.dir/sprites.c.o: ../include/render.h
+CMakeFiles/untitled.dir/sprites.c.o: ../include/struct.h
+CMakeFiles/untitled.dir/sprites.c.o: ../libft/libft.h
+CMakeFiles/untitled.dir/sprites.c.o: ../sprites.c
+CMakeFiles/untitled.dir/sprites.c.o: /usr/local/include/mlx.h
+
+CMakeFiles/untitled.dir/vector_vision.c.o: ../gnl/get_next_line.h
+CMakeFiles/untitled.dir/vector_vision.c.o: ../include/lists.h
+CMakeFiles/untitled.dir/vector_vision.c.o: ../include/parser.h
+CMakeFiles/untitled.dir/vector_vision.c.o: ../include/render.h
+CMakeFiles/untitled.dir/vector_vision.c.o: ../include/struct.h
+CMakeFiles/untitled.dir/vector_vision.c.o: ../libft/libft.h
+CMakeFiles/untitled.dir/vector_vision.c.o: ../vector_vision.c
+CMakeFiles/untitled.dir/vector_vision.c.o: /usr/local/include/mlx.h
+
 CMakeFiles/untitled.dir/window.c.o: ../gnl/get_next_line.h
+CMakeFiles/untitled.dir/window.c.o: ../include/lists.h
 CMakeFiles/untitled.dir/window.c.o: ../include/parser.h
 CMakeFiles/untitled.dir/window.c.o: ../include/render.h
 CMakeFiles/untitled.dir/window.c.o: ../include/struct.h

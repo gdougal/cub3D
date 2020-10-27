@@ -42,10 +42,11 @@ typedef struct		s_render {
 	void			*win;
 }					t_render;
 
+
 typedef struct		s_sprt
 {
-	float			x_sprt;
-	float			y_sprt;
+	float			x;
+	float			y;
 }					t_sprt;
 
 
@@ -56,8 +57,7 @@ typedef struct		s_all
 	t_location		locate;
 	t_cnt			cnt;
 	t_data			img;
-	t_list			list_1;
-	t_sprt			sprt;
+	t_list			*list_1;
 
 	int 			sprt_num;
 
@@ -84,6 +84,17 @@ typedef struct		s_all
 	float			d_x;
 	float 			d_y;
 	int				hit;
+	float 			*ray;
+
+	float 			dist_sprt;
+	float 			ang_sprt;
+	float 			d_ang_sprt;
+
+	float			h_sprt;
+	float 			w_sprt;
+	float			sprt_start;
+	float			sprt_end;
+
 }					t_all;
 
 
