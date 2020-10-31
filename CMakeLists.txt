@@ -14,9 +14,9 @@ file(GLOB list "${PROJECT_SOURCE_DIR}/list_func/*.c")
 
 
 add_executable(untitled
-        parser.c
+        Parser/parser.c
         window.c
         ${lib_src}
         ${gnl_src}
 #        ${list}
-        include/struct.h init_struct/init_struct.c render.c include/render.h include/lists.h vector_vision.c sprites.c)
+        include/struct.h init_struct/init_struct.c render.c include/render.h include/lists.h Trigonometry/vector_vision.c Sprites/sprites.c)

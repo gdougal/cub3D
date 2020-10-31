@@ -13,35 +13,34 @@
 #ifndef CUB3D_PARSER_H
 # define CUB3D_PARSER_H
 
-//# define FLAG_MINUS (0b00000001u)
-//# define FLAG_ZERO	(0b00000010u)
-
 # include "get_next_line.h"
 # include "libft.h"
+# include <stdlib.h>
+
 
 typedef struct		s_cube_struct
 {
     float			res_x;
     float			res_y;
-    char			*path_n;
-    char			*path_s;
-    char			*path_w;
-    char			*path_e;
-    char			*path_sprite;
+    char			*path[6];
 	unsigned int	flor_clr;
     unsigned int	ceilling_clr;
     char 			**map;
-
-    int 			width;
-    int 			height;
+    float 			width;
+    float 			height;
+    int				errno;
+    int				lines;
+    t_list			*list_f;
+    int				player;
 
 }					t_cube_struct;
 
 
 
 t_cube_struct		*parser(char *line, char L);
-void			go_to_screen(t_cube_struct *cube_struct);// go away tbl Jlishniy
-int	create_trgb(int t, int r, int g, int b);
+void				go_to_screen(t_cube_struct *cube_struct);// go away tbl Jlishniy
+int					create_trgb(int t, int r, int g, int b);
+void 				otshib_ochka(t_cube_struct *cub_st);
 
 
 #endif //CUB3D_PARSER_H

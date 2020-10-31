@@ -49,6 +49,16 @@ typedef struct		s_sprt
 	float			y;
 }					t_sprt;
 
+typedef struct s_txtrs
+{
+	void	*img;
+	void 	*adr;
+	int 	bits_per_pix;
+	int		line_length;
+	int		endian;
+	int 	width;
+	int 	height;
+}				t_txtrs;
 
 typedef struct		s_all
 {
@@ -58,8 +68,7 @@ typedef struct		s_all
 	t_cnt			cnt;
 	t_data			img;
 	t_list			*list_1;
-
-	int 			sprt_num;
+	t_txtrs			txtrs[6];
 
 	float			angle_s;
 	float			angle_r;
@@ -67,34 +76,36 @@ typedef struct		s_all
 	float			k;
 
 	float 			dist;
-	unsigned int 	w_1_color;
-	unsigned int 	w_2_color;
-	unsigned int 	w_3_color;
 	unsigned int 	w_4_color;
 	float			w_s;
 	float			w_e;
 	float			h_wll;
 
 	float			x_fc;
-	float			x_1;
-	float			y_1;
-	float			x_2;
-	float			y_2;
 	float 			y_fc;
 	float			d_x;
 	float 			d_y;
 	int				hit;
 	float 			*ray;
+	float 			x_1;
+	float 			y_1;
+	float 			x_2;
+	float 			y_2;
 
 	float 			dist_sprt;
 	float 			ang_sprt;
 	float 			d_ang_sprt;
 
 	float			h_sprt;
-	float 			w_sprt;
 	float			sprt_start;
 	float			sprt_end;
 
+	float			stp;
+	float			txtrs_pos;
+	int				tex_x;
+	float			wall_x;
+	int				tex_y;
+	float 			stp_sp;
 }					t_all;
 
 

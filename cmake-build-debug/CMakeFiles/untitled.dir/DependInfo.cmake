@@ -4,6 +4,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
+  "/Users/gdougal/Desktop/cub3d/Parser/parser.c" "/Users/gdougal/Desktop/cub3d/cmake-build-debug/CMakeFiles/untitled.dir/Parser/parser.c.o"
+  "/Users/gdougal/Desktop/cub3d/Sprites/sprites.c" "/Users/gdougal/Desktop/cub3d/cmake-build-debug/CMakeFiles/untitled.dir/Sprites/sprites.c.o"
+  "/Users/gdougal/Desktop/cub3d/Trigonometry/vector_vision.c" "/Users/gdougal/Desktop/cub3d/cmake-build-debug/CMakeFiles/untitled.dir/Trigonometry/vector_vision.c.o"
   "/Users/gdougal/Desktop/cub3d/gnl/get_next_line.c" "/Users/gdougal/Desktop/cub3d/cmake-build-debug/CMakeFiles/untitled.dir/gnl/get_next_line.c.o"
   "/Users/gdougal/Desktop/cub3d/gnl/get_next_line_utils.c" "/Users/gdougal/Desktop/cub3d/cmake-build-debug/CMakeFiles/untitled.dir/gnl/get_next_line_utils.c.o"
   "/Users/gdougal/Desktop/cub3d/init_struct/init_struct.c" "/Users/gdougal/Desktop/cub3d/cmake-build-debug/CMakeFiles/untitled.dir/init_struct/init_struct.c.o"
@@ -50,10 +53,7 @@ set(CMAKE_DEPENDS_CHECK_C
   "/Users/gdougal/Desktop/cub3d/libft/ft_substr.c" "/Users/gdougal/Desktop/cub3d/cmake-build-debug/CMakeFiles/untitled.dir/libft/ft_substr.c.o"
   "/Users/gdougal/Desktop/cub3d/libft/ft_tolower.c" "/Users/gdougal/Desktop/cub3d/cmake-build-debug/CMakeFiles/untitled.dir/libft/ft_tolower.c.o"
   "/Users/gdougal/Desktop/cub3d/libft/ft_toupper.c" "/Users/gdougal/Desktop/cub3d/cmake-build-debug/CMakeFiles/untitled.dir/libft/ft_toupper.c.o"
-  "/Users/gdougal/Desktop/cub3d/parser.c" "/Users/gdougal/Desktop/cub3d/cmake-build-debug/CMakeFiles/untitled.dir/parser.c.o"
   "/Users/gdougal/Desktop/cub3d/render.c" "/Users/gdougal/Desktop/cub3d/cmake-build-debug/CMakeFiles/untitled.dir/render.c.o"
-  "/Users/gdougal/Desktop/cub3d/sprites.c" "/Users/gdougal/Desktop/cub3d/cmake-build-debug/CMakeFiles/untitled.dir/sprites.c.o"
-  "/Users/gdougal/Desktop/cub3d/vector_vision.c" "/Users/gdougal/Desktop/cub3d/cmake-build-debug/CMakeFiles/untitled.dir/vector_vision.c.o"
   "/Users/gdougal/Desktop/cub3d/window.c" "/Users/gdougal/Desktop/cub3d/cmake-build-debug/CMakeFiles/untitled.dir/window.c.o"
   )
 set(CMAKE_C_COMPILER_ID "AppleClang")

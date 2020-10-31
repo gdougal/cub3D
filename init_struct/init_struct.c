@@ -57,23 +57,16 @@ t_all 	init_vars(t_cube_struct *cube_struct)
 	vars.render = render;
 	vars.img = img;
 	vars.cnt = cnt;
-	vars.fov = (60 * M_PI) / 180;
+	vars.fov = (float)(60 * M_PI) / 180;
 	vars.dist = 0;
 	vars.angle_s = 0;
 	vars.angle_r = 0;
-	vars.w_1_color = 8000;
-	vars.w_2_color = 800000;
-	vars.w_3_color = 808000;
-	vars.w_4_color = 808080;
+	vars.w_4_color = 800;
 	vars.w_s = 0;
 	vars.w_e = 0;
 	vars.k = 0;
 
 	vars.x_fc = 0;
-	vars.x_1 = 0;
-	vars.y_1 = 0;
-	vars.x_2 = 0;
-	vars.y_2 = 0;
 	vars.y_fc = 0;
 	vars.d_x = 0;
 	vars.d_y = 0;

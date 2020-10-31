@@ -14,26 +14,12 @@ stdlib.h
 fcntl.h
 -
 
-../include/lists.h
-struct.h
-../include/struct.h
-
 ../include/parser.h
 get_next_line.h
 ../include/get_next_line.h
 libft.h
 ../include/libft.h
-
-../include/render.h
-mlx.h
--
-lists.h
-../include/lists.h
-
-../include/struct.h
-parser.h
-../include/parser.h
-math.h
+stdlib.h
 -
 
 ../libft/libft.h
@@ -44,17 +30,7 @@ stdlib.h
 unistd.h
 -
 
-/Users/gdougal/Desktop/cub3d/vector_vision.c
-render.h
-/Users/gdougal/Desktop/cub3d/render.h
-stdio.h
--
-
-/Users/gdougal/Desktop/cub3d/window.c
-render.h
-/Users/gdougal/Desktop/cub3d/render.h
-stdio.h
--
-
-/usr/local/include/mlx.h
+/Users/gdougal/Desktop/cub3d/Parser/parser.c
+parser.h
+/Users/gdougal/Desktop/cub3d/Parser/parser.h
 
