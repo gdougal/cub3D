@@ -6,17 +6,16 @@
 /*   By: gdougal <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/01 15:33:22 by gdougal           #+#    #+#             */
-/*   Updated: 2020/11/01 15:33:25 by gdougal          ###   ########.fr       */
+/*   Updated: 2020/11/04 19:26:51 by gdougal          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "cub3d.h"
 
-static void	map_unproc(t_cube *cub_st, float height, int *flag)
+static void	map_unproc(t_cube *cub_st, int *flag)
 {
 	*flag = 1;
 	cub_st->mp = ft_strdup(cub_st->line);
-	cub_st->map = (char **)malloc((int)(height + 1) * sizeof(char *));
 	cub_st->width = (ft_strlen(cub_st->mp) > cub_st->width ?
 						ft_strlen(cub_st->mp) : cub_st->width);
 	if (!cub_st->list_f)
@@ -26,7 +25,7 @@ static void	map_unproc(t_cube *cub_st, float height, int *flag)
 	cub_st->height++;
 }
 
-void		map_proc(float height, t_cube *cub_st, char *argv)
+void		map_proc(t_cube *cub_st, char *argv)
 {
 	int		fd;
 	int		ret;
@@ -41,7 +40,7 @@ void		map_proc(float height, t_cube *cub_st, char *argv)
 			otshib_ochka(cub_st, 0);
 		else if (flag || cub_st->line[0] == '1'
 			|| cub_st->line[0] == ' ' || cub_st->line[0] == '0')
-			map_unproc(cub_st, height, &flag);
+			map_unproc(cub_st, &flag);
 		if (cub_st->line)
 			free(cub_st->line);
 		if (!ret)

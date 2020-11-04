@@ -6,7 +6,7 @@
 #    By: gdougal <marvin@42.fr>                     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/11/03 21:58:00 by gdougal           #+#    #+#              #
-#    Updated: 2020/11/04 11:55:53 by gdougal          ###   ########.fr        #
+#    Updated: 2020/11/04 19:26:17 by gdougal          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -32,7 +32,7 @@ PARS_DIR		=	Parser/
 SRCS_PARS		=  $(addprefix $(PARS_DIR), check_type_first_arg.c \
 											color_check_f_c.c \
 											create_rgb.c \
-											cub3D.c \
+											cub3d.c \
 											glob_error.c \
 											init_pars_struct.c \
 											map_proc.c \
@@ -117,5 +117,3 @@ fclean: clean
 
 .PHONY: re
 re:		fclean all
-	-include $(wildcards $(D_FILE))
-

@@ -6,7 +6,7 @@
 /*   By: gdougal <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/12 12:21:10 by gdougal           #+#    #+#             */
-/*   Updated: 2020/10/12 12:21:13 by gdougal          ###   ########.fr       */
+/*   Updated: 2020/11/04 19:25:03 by gdougal          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,7 +41,7 @@ void				init_struct(t_cube *cub_st);
 void				proc_numbers(char *line, char l, t_cube *cub_st);
 void				color_check(t_cube *cub_st);
 void				proc_path(char *line, char l, t_cube *cub_st);
-void				map_proc(float height, t_cube *cub_st, char *argv);
+void				map_proc(t_cube *cub_st, char *argv);
 
 void				valid_sym_map(char *tmp, t_cube *cub_st);
 void				map_val(t_cube *cub_st);

@@ -6,7 +6,7 @@
 /*   By: gdougal <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/08 15:05:10 by gdougal           #+#    #+#             */
-/*   Updated: 2020/10/08 15:05:15 by gdougal          ###   ########.fr       */
+/*   Updated: 2020/11/04 19:25:35 by gdougal          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -78,7 +78,7 @@ int			main(int argc, char **argv)
 		free(cub_st.line);
 	if (cub_st.lines != 8)
 		otshib_ochka(&cub_st, 6);
-	map_proc(cub_st.height, &cub_st, argv[1]);
+	map_proc(&cub_st, argv[1]);
 	go_to_screen(&cub_st);
 	return (0);
 }
