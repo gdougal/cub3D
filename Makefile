@@ -6,7 +6,7 @@
 #    By: gdougal <marvin@42.fr>                     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/11/03 21:58:00 by gdougal           #+#    #+#              #
-#    Updated: 2020/11/04 19:26:17 by gdougal          ###   ########.fr        #
+#    Updated: 2020/11/04 22:05:29 by gdougal          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -21,6 +21,10 @@ MLX_DIR			=	./libs/minilibx/
 SRCS_DIR		=	./srcs/
 
 HEADERS_DIR		=	$(SRCS_DIR)include/
+
+SRCS_HEAD		=	$(addprefix $(HEADERS_DIR), cub3d.h \
+												struct.h \
+												render.h)
 
 INCLUDES		=	-I$(HEADERS_DIR) -I$(MLX_DIR) -I./$(LIBFT_DIR)
 
@@ -94,10 +98,10 @@ $(NAME): $(ALL_O_DIRS) $(O_FILE)
 	$(MAKE) -C libs/libft all
 	$(MAKE) -C libs/libft bonus
 	$(MAKE) -C libs/minilibx all
-	gcc $(FLAGS) $(O_FILE) $(LFLAGS) -o $(NAME)
+	$(CC) $(FLAGS) $(O_FILE) $(LFLAGS) -o $(NAME)
 
-$(O_FILE): $(OBJ_DIR)%.o: $(SRCS_DIR)%.c
-	gcc -c $(FLAGS) $(INCLUDES) -c $< -o $@ -MD
+$(O_FILE): $(OBJ_DIR)%.o: $(SRCS_DIR)%.c $(SRCS_HEAD)
+	$(CC) -c $(FLAGS) $(INCLUDES) -c $< -o $@
 
 $(ALL_O_DIRS):
 		@mkdir -p $(ALL_O_DIRS)
@@ -112,8 +116,9 @@ clean:
 
 PHONY: fclean
 fclean: clean
-	$(MAKE) -C libs/libft fclean
-	rm -f $(NAME)
+	$(MAKE) -C libs/libft fclean --no-print-directory --silent
+	rm -f $(NAME) screenshoot.bmp
+
 
 .PHONY: re
 re:		fclean all

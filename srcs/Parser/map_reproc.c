@@ -29,16 +29,16 @@ void		map_reproc(t_cube *cub_st)
 	i = 0;
 	tmp = cub_st->list_f;
 	if (!(cub_st->map = (char **)malloc(sizeof(char *)
-			* (int)(cub_st->height))))
+			* (int)(cub_st->height + 1))))
 		otshib_ochka(cub_st, 0);
-	while (i < (int)cub_st->height)
-		cub_st->map[i++] = ft_calloc((cub_st->width), sizeof(char));
+	while (i <= (int)cub_st->height)
+		cub_st->map[i++] = ft_calloc((cub_st->width + 1), sizeof(char));
 	cub_st->map[i] = NULL;
 	i = 0;
 	while (tmp)
 	{
 		valid_sym_map((char *)tmp->content, cub_st);
-		ft_strlcpy(cub_st->map[i], tmp->content, (ft_strlen(tmp->content) + 1));
+		ft_strlcpy(cub_st->map[i], tmp->content, cub_st->width);
 		tmp = tmp->next;
 		i++;
 	}

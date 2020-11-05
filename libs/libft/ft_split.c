@@ -29,8 +29,10 @@ static	int	tabs(char **ar, char *t, char c)
 {
 	int	i;
 	int	j;
+	int	k;
 
 	j = 0;
+	k = 0;
 	while (*t)
 	{
 		i = 0;
@@ -38,7 +40,12 @@ static	int	tabs(char **ar, char *t, char c)
 			++i;
 		if (i > 0)
 		{
-			ar[j++] = ft_substr(t, 0, i);
+			if(!(ar[j] = ft_substr(t, 0, i)))
+				while(k < j)
+					free(ar[k++]);
+			if (k != 0)
+				return (1);
+			j++;
 			t = t + i - 1;
 		}
 		t++;
@@ -56,10 +63,14 @@ char		**ft_split(char const *s, char c)
 		return (NULL);
 	j = lines(s, c);
 	t = (char *)s;
-	ar = (char**)malloc((j + 1) * sizeof(char*));
-	if (!ar)
+	if(!(ar = (char**)malloc((j + 1) * sizeof(char*))))
 		return (NULL);
 	ar[j] = NULL;
-	tabs(ar, t, c);
-	return (ar);
+	if(tabs(ar, t, c))
+	{
+		free(ar);
+		return (NULL);
+	}
+	else
+		return (ar);
 }

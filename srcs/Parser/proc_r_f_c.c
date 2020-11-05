@@ -25,13 +25,13 @@ static void	resol_pars(t_cube *cub_st, char **tmp, int j)
 	while (tmp[j][i])
 		if (!(ft_isdigit(tmp[j][i++])))
 			otshib_ochka(cub_st, 2);
-	if (j == 1 && i < 6)
+	if (j == 1 && i < 5)
 		cub_st->res_x = (float)ft_atoi(tmp[j]);
-	else if (j == 1 && i >= 6)
+	if ((j == 1 && i >= 5) || (cub_st->res_x > 2560))
 		cub_st->res_x = 2560;
-	if (j == 2 && i < 6)
+	if (j == 2 && i < 5)
 		cub_st->res_y = (float)ft_atoi(tmp[2]);
-	else if (j == 2 && i >= 6)
+	if ((j == 2 && i >= 5) || cub_st->res_y > 1440)
 		cub_st->res_y = 1440;
 	if (cub_st->res_x == 0 || cub_st->res_y == 0)
 		otshib_ochka(cub_st, 2);

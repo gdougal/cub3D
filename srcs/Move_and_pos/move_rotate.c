@@ -46,7 +46,7 @@ static void	move_left_right(int keycode, t_all *vars, int *a, int *b)
 	if (keycode == 2)
 	{
 		if (vars->pars.map[(int)(vars->loc.y)][(int)(vars->loc.x
-		- 0.3 * cos(M_PI / k + vars->angle_r) * c)] != '1')
+		- 0.4 * cos(M_PI / k + vars->angle_r) * c)] != '1')
 			vars->loc.x -= 0.25 * cos(M_PI / k + vars->angle_r) * c;
 		if (vars->pars.map[(int)(vars->loc.y - 0.3 * sin(M_PI / k
 		+ vars->angle_r) * c)][(int)(vars->loc.x)] != '1')
@@ -55,7 +55,7 @@ static void	move_left_right(int keycode, t_all *vars, int *a, int *b)
 	if (keycode == 0)
 	{
 		if (vars->pars.map[(int)(vars->loc.y)][(int)(vars->loc.x
-		+ 0.3 * cos(M_PI / k + vars->angle_r) * c)] != '1')
+		+ 0.4 * cos(M_PI / k + vars->angle_r) * c)] != '1')
 			vars->loc.x += 0.25 * cos(M_PI / k + vars->angle_r) * c;
 		if (vars->pars.map[(int)(vars->loc.y + 0.3 * sin(M_PI / k
 		+ vars->angle_r) * c)][(int)(vars->loc.x)] != '1')

@@ -17,7 +17,7 @@ static void	map_unproc(t_cube *cub_st, int *flag)
 	*flag = 1;
 	cub_st->mp = ft_strdup(cub_st->line);
 	cub_st->width = (ft_strlen(cub_st->mp) > cub_st->width ?
-						ft_strlen(cub_st->mp) : cub_st->width);
+						ft_strlen(cub_st->mp) + 1 : cub_st->width + 1);
 	if (!cub_st->list_f)
 		cub_st->list_f = ft_lstnew((char*)cub_st->mp);
 	else

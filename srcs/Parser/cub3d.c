@@ -42,17 +42,12 @@ static void	first_part_params(char *line, t_cube *cub_st, int *i)
 
 static void	check_argc(int argc, char **argv, t_cube *cub_st)
 {
-	int	i;
-
-	i = 0;
 	if (argc != 2 && argc != 3)
 		otshib_ochka(cub_st, 8);
 	else if (argc == 3 && (ft_strncmp("--save", argv[2], 7) == 0))
 		cub_st->save = 1;
 	else if (argc == 3)
-		while (argv[2][i])
-			if (!ft_isdigit(argv[2][i++]))
-				otshib_ochka(cub_st, 8);
+		otshib_ochka(cub_st, 8);
 }
 
 int			main(int argc, char **argv)
