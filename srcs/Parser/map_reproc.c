@@ -27,11 +27,12 @@ void		map_reproc(t_cube *cub_st)
 	t_list	*tmp;
 
 	i = 0;
+	cub_st->width += 1;
 	tmp = cub_st->list_f;
 	if (!(cub_st->map = (char **)malloc(sizeof(char *)
 			* (int)(cub_st->height + 1))))
 		otshib_ochka(cub_st, 0);
-	while (i <= (int)cub_st->height)
+	while (i < (int)cub_st->height)
 		cub_st->map[i++] = ft_calloc((cub_st->width + 1), sizeof(char));
 	cub_st->map[i] = NULL;
 	i = 0;

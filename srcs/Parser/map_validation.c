@@ -11,7 +11,6 @@
 /* ************************************************************************** */
 
 #include "cub3d.h"
-# include <stdio.h>
 
 static void		map_validation_x(t_cube *cub_st, int i, int j)
 {
@@ -43,7 +42,7 @@ static void		map_validation_y(t_cube *cub_st, int i, int j)
 	y = i;
 	x = j;
 	if (i == 0 || j == 0 || j == (int)cub_st->height - 1 ||
-			i == (int)cub_st->width)
+			i == (int)cub_st->width - 1)
 		otshib_ochka(cub_st, 0);
 	while (y < (int)cub_st->width && cub_st->map[x][y] != '1')
 	{
@@ -69,7 +68,6 @@ void			map_val(t_cube *cub_st)
 	j = 0;
 	while (cub_st->map[j])
 	{
-		i = 0;
 		while (cub_st->map[j][i] != '\0')
 		{
 			if (cub_st->map[j][i] == '0' || cub_st->map[j][i] == 'N' ||
@@ -78,6 +76,7 @@ void			map_val(t_cube *cub_st)
 				map_validation_y(cub_st, i, j);
 			i++;
 		}
+		i = 0;
 		j++;
 	}
 }
