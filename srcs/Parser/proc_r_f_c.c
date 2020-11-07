@@ -30,7 +30,7 @@ static void	resol_pars(t_cube *cub_st, char **tmp, int j)
 	if ((j == 1 && i >= 5) || (cub_st->res_x > 2560))
 		cub_st->res_x = 2560;
 	if (j == 2 && i < 5)
-		cub_st->res_y = (float)ft_atoi(tmp[2]);
+		cub_st->res_y = (float)ft_atoi(tmp[j]);
 	if ((j == 2 && i >= 5) || cub_st->res_y > 1440)
 		cub_st->res_y = 1440;
 	if (cub_st->res_x == 0 || cub_st->res_y == 0)
@@ -47,10 +47,16 @@ static void	colour_pars(t_cube *cub_st, int k)
 	r = ft_atoi(cub_st->tmp[0]);
 	g = ft_atoi(cub_st->tmp[1]);
 	b = ft_atoi(cub_st->tmp[2]);
-	if (k == 1 && r <= 255 && g <= 255 && b <= 255)
+	if (cub_st->f && k == 1 && r <= 255 && g <= 255 && b <= 255)
+	{
 		cub_st->flor_clr = (unsigned int)create_trgb(0, r, g, b);
-	else if (k == 2 && r <= 255 && g <= 255 && b <= 255)
+		cub_st->f = 0;
+	}
+	else if (cub_st->c && k == 2 && r <= 255 && g <= 255 && b <= 255)
+	{
 		cub_st->ceilling_clr = (unsigned int)create_trgb(0, r, g, b);
+		cub_st->c = 0;
+	}
 	else
 		otshib_ochka(cub_st, 3);
 }
@@ -60,6 +66,8 @@ static void	proc_resol(t_cube *cub_st, char *line)
 	cub_st->tmp = ft_split(line, ' ');
 	resol_pars(cub_st, cub_st->tmp, 1);
 	resol_pars(cub_st, cub_st->tmp, 2);
+	if (cub_st->res_x == 10 && cub_st->res_y == 10)
+		cub_st->res_x = 11;
 	cub_st->lines++;
 }
 
@@ -79,10 +87,15 @@ static void	proc_colour(t_cube *cub_st, char *line, char l)
 		otshib_ochka(cub_st, 3);
 	cub_st->tmp = ft_split(cub_st->mp, ',');
 	if (l == 'F')
+	{
 		colour_pars(cub_st, 1);
+		cub_st->lines++;
+	}
 	else if (l == 'C')
+	{
 		colour_pars(cub_st, 2);
-	cub_st->lines++;
+		cub_st->lines++;
+	}
 	if (cub_st->mp)
 		free(cub_st->mp);
 }

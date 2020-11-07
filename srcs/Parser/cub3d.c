@@ -31,7 +31,7 @@ static void	first_part_params(char *line, t_cube *cub_st, int *i)
 		proc_path(line, 'W', cub_st);
 	else if (!ft_memcmp(line, "EA", 2))
 		proc_path(line, 'E', cub_st);
-	else if (line[0] == 'S')
+	else if (!ft_memcmp(line, "S ", 2))
 		proc_path(line, 's', cub_st);
 	else if (cub_st->lines == 8)
 		while (line[*i])

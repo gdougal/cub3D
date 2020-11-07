@@ -1,4 +1,4 @@
-R 640 500
+R 1200 800
 
 S ./pics/fire.xpm
 NO ./pics/MOB.xpm

@@ -17,20 +17,20 @@ static void	move_forvard_back(int keycode, t_all *vars)
 	if (keycode == 13)
 	{
 		if (vars->pars.map[(int)(vars->loc.y)]
-			[(int)(vars->loc.x + 0.3 * cosf(vars->k + vars->angle_r))] != '1')
+			[(int)(vars->loc.x + 0.4 * cosf(vars->k + vars->angle_r))] != '1')
 			vars->loc.x += 0.25 * cosf(vars->k + vars->angle_r);
 		if (vars->pars.map[(int)(vars->loc.y
-			+ 0.3 * sinf(vars->k + vars->angle_r))]
+			+ 0.4 * sinf(vars->k + vars->angle_r))]
 			[(int)(vars->loc.x)] != '1')
 			vars->loc.y += 0.25 * sinf(vars->k + vars->angle_r);
 	}
 	if (keycode == 1)
 	{
 		if (vars->pars.map[(int)(vars->loc.y)]
-			[(int)(vars->loc.x - 0.3 * cosf(vars->k + vars->angle_r))] != '1')
+			[(int)(vars->loc.x - 0.4 * cosf(vars->k + vars->angle_r))] != '1')
 			vars->loc.x -= 0.25 * cosf(vars->k + vars->angle_r);
 		if (vars->pars.map[(int)(vars->loc.y
-			- 0.3 * sinf(vars->k + vars->angle_r))]
+			- 0.4 * sinf(vars->k + vars->angle_r))]
 			[(int)(vars->loc.x)] != '1')
 			vars->loc.y -= 0.25 * sinf(vars->k + vars->angle_r);
 	}
@@ -48,7 +48,7 @@ static void	move_left_right(int keycode, t_all *vars, int *a, int *b)
 		if (vars->pars.map[(int)(vars->loc.y)][(int)(vars->loc.x
 		- 0.4 * cos(M_PI / k + vars->angle_r) * c)] != '1')
 			vars->loc.x -= 0.25 * cos(M_PI / k + vars->angle_r) * c;
-		if (vars->pars.map[(int)(vars->loc.y - 0.3 * sin(M_PI / k
+		if (vars->pars.map[(int)(vars->loc.y - 0.4 * sin(M_PI / k
 		+ vars->angle_r) * c)][(int)(vars->loc.x)] != '1')
 			vars->loc.y -= 0.25 * sin(M_PI / k + vars->angle_r) * c;
 	}
@@ -57,7 +57,7 @@ static void	move_left_right(int keycode, t_all *vars, int *a, int *b)
 		if (vars->pars.map[(int)(vars->loc.y)][(int)(vars->loc.x
 		+ 0.4 * cos(M_PI / k + vars->angle_r) * c)] != '1')
 			vars->loc.x += 0.25 * cos(M_PI / k + vars->angle_r) * c;
-		if (vars->pars.map[(int)(vars->loc.y + 0.3 * sin(M_PI / k
+		if (vars->pars.map[(int)(vars->loc.y + 0.4 * sin(M_PI / k
 		+ vars->angle_r) * c)][(int)(vars->loc.x)] != '1')
 			vars->loc.y += 0.25 * sin(M_PI / k + vars->angle_r) * c;
 	}

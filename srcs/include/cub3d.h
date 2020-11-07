@@ -33,7 +33,8 @@ typedef struct		s_cube_struct
 	char			**tmp;
 	int				save;
 	char			*line;
-
+	int				c;
+	int				f;
 }					t_cube;
 
 void				chek_type_first_arg(char *arg, t_cube *cub_st);

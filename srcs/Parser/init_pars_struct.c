@@ -31,4 +31,6 @@ void	init_struct(t_cube *cub_st)
 	cub_st->player = 0;
 	cub_st->save = 0;
 	cub_st->line = NULL;
+	cub_st->c = 1;
+	cub_st->f = 1;
 }
